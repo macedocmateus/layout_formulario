@@ -51,7 +51,7 @@ form{
   background-color: #fafafc;
   min-height: 300px;
   margin-top: 42px;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 8px 0 0;
   padding: 64px;
 
   display: flex;
@@ -179,5 +179,36 @@ opacity: 0;
 }
 
 .checkbox-wrapper input:focus + label::before {
-  outline: 2px solid black;
+  outline: 2px solid rgb(94, 94, 94);
+}
+
+footer {
+  background-color: #f0f0f4;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button{
+  font-family: 'archivo', sans-serif;
+  height: 56px;
+  background-color: #04D361;
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  border: none;
+  border-radius: 8px 8px 8px 8px;
+  font-weight: 600;
+}
+
+footer .button:hover{
+  background-color: #008b3f;
+}
+
+input:invalid {
+  border: 2px solid rgb(204, 0, 0);
 }
